@@ -22,7 +22,7 @@ data %>%
 # There is an warning message that there is a row with missing values
 # so we should get rid of it
 
-data <- data %>% na.omit(.)
+data <- data %>% na.omit(.) # You can also use drop_na(), which is a tidyr function
 data %>% 
   ggplot(aes(x = year, 
              y = t_diff)) +
